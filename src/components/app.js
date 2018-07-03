@@ -4,6 +4,7 @@ import {Route, withRouter} from 'react-router-dom';
 
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
+import LoginPage from './login-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
@@ -43,8 +44,9 @@ export class App extends React.Component {
             <div className="app">
                 <HeaderBar />
                 <Route exact path="/" component={LandingPage} />
-                <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/register" component={RegistrationPage} />
+                <Route exact path="/dashboard" component={Dashboard} />
             </div>
         );
     }
@@ -56,4 +58,4 @@ const mapStateToProps = state => ({
 });
 
 // Deal with update blocking - https://reacttraining.com/react-router/web/guides/dealing-with-update-blocking
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(connect(mapStateToProps)(App)); 
