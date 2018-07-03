@@ -1,5 +1,12 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: bypB7fCVMZCVSLk27l38uUeKujHnbAx8u02Eai9SSEtXoLVcMfxW+lXby1qgbNb2qFqwvwn54Ba1hpcRScVm+Tu0X3Ku5LzyxabgIBeUW7mYuudYiIpvFfX3+S3yC0QPTh97bBLXX3hP+lqGZsNmNI9LoyWlVyJRULwB/aBEzDxuyxktFC9bmrBtHCJ/Qw+Q/PSTHaXwPSy6kzPFFwNzUbNdOu2YamxX2Azr6PHc2g1zjL1tz9jhBZpor5uKoqrDPTgpNWNuToqMMINMIfVjpoC8votlNkBiZ/irJEwl4epvRaq3JLDvYlBAjVTxXirRazt6vrMstrJPl0kbjEJAjrDKbb2EWlKyIGNdE13vmDLSV1eQhOFNPfJ2yN0DQ3jLl5Ia3QUOwr/NNQixAaWCTl4fU9wuGca7HUYqT7xmAcw2RWmhsICvdMjLhK3hdIL7NxqDrAW0WFBQvf9hIGR1k+42CCbztmP+ViW/XBAM/f87LgqvRzwUgIUc3Qs+lgTopEAmiMXwkZW8TDSavXQz9rfz6B5k9Kd0INqiRI/5xnIXFpeaqxy9A+W98P1fBRH/Yu8j3pkUV+KEZmdLL3KAGbyUcOM32U0A6qOuHjuWQI4Qklj7bfK+joYybMLoPF3KO5GQNJfzw0H5Gl/cgY9LnFXw4hOLpUt8ny1zFs/GqmE=
+  app: young-retreat-55584
+  on:
+    repo: daSmith1105/moodsense-client
