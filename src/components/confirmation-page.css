@@ -1,0 +1,31 @@
+.confirmation-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    text-align: center;
+}
+
+.confirmation-container>h1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.recap-container {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.notes {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.notes-recap {
+    height: 12em;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: .5em;
+    padding: .5em;
+    margin: auto;
+    text-align: left;
+}

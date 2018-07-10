@@ -1,0 +1,31 @@
+.page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    width: 100%;
+}
+
+.page>h1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.recap-container {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.notes-form {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.text-area {
+    height: 12em;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: .5em;
+    padding: .5em;
+    margin: auto;
+}

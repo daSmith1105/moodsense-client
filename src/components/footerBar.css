@@ -1,0 +1,11 @@
+.footer-bar {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.moodLog-btn {
+    float: left;
+    padding: 1em;
+}

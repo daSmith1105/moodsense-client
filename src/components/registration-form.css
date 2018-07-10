@@ -1,0 +1,28 @@
+.registration-form {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.registration-form hr {
+    width: 60vw;
+    max-width: 500px;
+}
+
+input {
+    border: none;
+    width: 80%;
+    max-width: 200px;
+}
+
+.submit-registration {
+    text-align: center;
+    width: 60%;
+    font-size: 160%;
+    height: auto;
+    margin-top: 1em;
+}

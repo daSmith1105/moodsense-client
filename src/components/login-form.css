@@ -1,0 +1,28 @@
+.login-form {
+    width: 60vw;
+    max-width: 500px;
+    margin: auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.login-form hr {
+    width: 60vw;
+    max-width: 500px;
+}
+
+input {
+    border: none;
+    width: 80%;
+    max-width: 200px;
+}
+
+.login-btn {
+    text-align: center;
+    width: 50%;
+    font-size: 160%;
+    height: auto;
+    margin-top: 1em;
+}

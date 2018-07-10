@@ -1,0 +1,22 @@
+.header-bar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 110%;
+    margin-top: .5em;
+}
+
+.home-btn {
+    position: fixed;
+    top: .5em;
+    left: 1em;
+}
+
+.logout-btn {
+    position: fixed;
+    top: .5em;
+    right: 1em;
+}

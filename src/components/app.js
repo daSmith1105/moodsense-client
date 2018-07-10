@@ -3,11 +3,14 @@ import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 
 import HeaderBar from './header-bar';
+import FooterBar from './footerBar';
 import LandingPage from './landing-page';
 import LoginPage from './login-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
+
+import Stepper from './stepper';
 
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
@@ -47,6 +50,8 @@ export class App extends React.Component {
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/register" component={RegistrationPage} />
                 <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/stepper" component={Stepper} />
+                <FooterBar />
             </div>
         );
     }

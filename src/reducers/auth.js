@@ -3,14 +3,16 @@ import {
     CLEAR_AUTH,
     AUTH_REQUEST,
     AUTH_SUCCESS,
-    AUTH_ERROR
+    AUTH_ERROR,
+    INFO_TOGGLE
 } from '../actions/auth';
 
 const initialState = {
     authToken: null, // authToken !== null does not mean it has been validated
     currentUser: null,
     loading: false,
-    error: null
+    error: null,
+    info: true
 };
 
 export default function reducer(state = initialState, action) {
@@ -37,6 +39,10 @@ export default function reducer(state = initialState, action) {
         return Object.assign({}, state, {
             loading: false,
             error: action.error
+        });
+    } else if (action.type === INFO_TOGGLE) {
+        return Object.assign({}, state, {
+            info: !state.info
         });
     }
     return state;
