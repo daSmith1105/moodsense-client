@@ -5,6 +5,10 @@
     margin-left: auto;
 }
 
+.mood-container:hover {
+    background-color: lightblue;
+}
+
 .icon-container {
     float: left;
     width: 25%;

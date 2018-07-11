@@ -122,7 +122,7 @@ const moods = moodList.map(mood =>
                 <p>3</p>
                 </div>
                 <div className="mood-rating">
-                <input type="radio" name={mood.title} value={mood.title + '.clear'} checked/>
+                <input type="radio" name={mood.title} value={mood.title + '.clear'} defaultChecked/>
                 <p>clear</p>
                 </div>
             </div>
